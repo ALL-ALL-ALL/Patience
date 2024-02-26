@@ -9,28 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-           
-            
-            Button {
-
-            } label: {
-                Image(systemName: "ellipsis")
-                    .frame(width: 100, height: 50)
-                    .font(.system(size: 80))
-                    .background(.gray)
+            VStack {
                 
-                Image(systemName: "")
-            }
+                Button {
+                           } 
+                label: {
+                               VStack {
+                                   Image(systemName: "ellipsis")
+                                       .frame(width: 100, height: 50)
+                                       .font(.system(size: 100))
+                                       .background(Color.gray)
+                                   Text("Arrêter")
+                                   
+                               } // f vstack
+                           } // f label
+              
+                    
+                
+                
+                } // f vstack
+            } // F BODY
+        } // F STRUCT
+        
+       
 
-            
-            
-            
-            
-        }// VSATCK
-        .padding()
-    }// BODY
-}// STRUCT
+
 
 #Preview {
     ContentView()
